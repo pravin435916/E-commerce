@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Shopping Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#myUL">Products</a></li>
+        <li><a href="#ship" onclick="ship()">Shipping</a></li>
+        <li><a href="#">Cart</a></li>
+        
+        <div id="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+        <button id="clear-to-cart">Clear cart</button>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Featured Products</h2>
+    <input type="text"  id="myInput" onkeyup="myFunction()" placeholder="Search for products..""  title="Type in a name">
+    
+      <section class="products" id="myUL">
+        <!-- <h1>Electronics</h1> -->
+        <div class="product-card">
+        <li><a href="#">
+          <img src="img/product-2.jpg.jpg" alt="Product 2" />
+          <h3>Earbuds</h3>
+          <p>$9.99</p>
+          <button id="add-to-cart">
+            <p id="btnText">Add to Cart</p>
+          </button>
+        </a></li> </div>
+           <div class="product-card">
+            <li><a href=""> <img src="img/product-1.jpg.jpg" alt="Product 1" />
+            <h3>Smart watch</h3>
+            <p>$19.99</p>
+            <button id="add-to-cart" >
+              <p id="btnText">Add to Cart</p>
+            </button>
+          </a></li>
+          </div>
+
+
+          <div class="product-card">
+          <li><a href="#">
+            <img src="img/product-3.jpg" alt="Product 3" />
+            <h3>Headphones</h3>
+            <p>$15.99</p>
+            <button id="add-to-cart" >
+              <p id="btnText">Add to Cart</p>
+            </button>
+          </a></li>
+        </div>
+          <div class="product-card">
+          <li><a href="#">
+            <img src="img/product-0.jpg" alt="Product 0" />
+            <h3>Iphone</h3>
+            <p>$49.99</p>
+            <button id="add-to-cart">Add to cart</button>
+          </a></li>
+        </div>
+      <!-- <h1>Mens/Women's</h1> -->
+        <div class="product-card">
+          <li><a href="#">
+            <img src="img/product-4.jpg" alt="Product 1" />
+            <h3>Shirt-Calvin</h3>
+            <p>$8.99</p>
+            <button id="add-to-cart">Add to cart</button>
+          </a></li> </div>
+          
+          <div class="product-card">
+          <li><a href="#">
+            <img src="img/product-5.jpg" alt="Product 2" />
+            <h3>Saree</h3>
+            <p>$12.99</p>
+            <button id="add-to-cart">Add to cart</button>
+          </a></li> </div>
+
+          <div class="product-card">
+          <li><a href="#">
+            <img src="img/product-8.jpg" alt="Product 3" />
+            <h3>Dress-Girl</h3>
+            <p>$3.99</p>
+            <button id="add-to-cart">Add to cart</button>
+          </a></li> </div>
+
+          <div class="product-card">
+          <li><a href="#">
+            <img src="img/product-7.jpg" alt="Product 3" />
+            <h3>Kids-Boys</h3>
+            <p>$5.99</p>
+            <button id="add-to-cart">Add to cart</button>
+          </a></li></div>
+          <div class="product-card">
+          <li><a href="#">
+            <img src="img/product-6.jpg" alt="Product 3" />
+            <h3>Shoes</h3>
+            <p>7.99</p>
+            <button id="add-to-cart">Add to cart</button>
+          </a></li></div>
+          <div class="product-card">
+          <li><a href="#">
+            <img src="img/product-9.jpg" alt="Product 3" />
+            <h3>Chappal</h3>
+            <p>$2.99</p>
+            <button id="add-to-cart">Add to cart</button>
+          </a></li></div>
+        </ul>
+      
+        </section>
+      </main>
+      <div class="shipping" id="ship">
+        <h2>Shipping calculator</h2>
+        <input type="text" id="input">
+        <button onclick="Calculate()">Calculate</button>
+        <i class="fa-solid fa-xmark" onclick="closee()" id="close"></i>
+        
+        <h2 id="h2"></h2>
+      </div>
+
+
+
+      
+    <footer>
+      <p>&copy; 2023 E-commerce Shopping Website</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

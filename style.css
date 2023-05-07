@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #eee;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 20%;
+    height: 400px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    transition: 0.8s ease-in-out;
+  }
+  @media screen and (max-width:480px){
+    .product-card{
+      display: flex;
+      max-width: 35%;
+      margin-top: 0px;
+      padding: 0px;
+      scroll-snap-align: x mandatory;
+      overflow: hidden;
+    }
+    #myInput{
+      display: flex;
+      position: relative;
+      margin-left:-250px;
+      margin-top:30px;
+      top: 50px;
+      left: 0px;
+    }
+    
+  }
+  .product-card img {
+    width: 100%;
+    margin: 5px;
+    aspect-ratio: 3/4;
+    object-fit: contain;
+  }
+  
+  .product-card h3 {
+    margin-top: 10px;
+  }
+  
+  .product-card p {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  .product-card button {
+    position: relative;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    left: 27%;
+    text-align: center;
+  }
+  #cart{
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: greenyellow;
+    position: absolute;
+    float: right;
+    top: 100px;
+    right: 20px;
+    padding: 10px;
+    /* display: none; */
+  }
+  #clear-to-cart{
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: greenyellow;
+    position: absolute;
+    float: right;
+    top: 100px;
+    right: 100px;
+    padding: 10px;
+  }
+  .products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+  }
+  #myInput{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    width: 300px;
+    border-radius: 18px;
+    position: relative;
+    left: 250px;
+    top: -25px;
+  }
+
+  .shipping{
+    display: none;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    top: 20%; 
+    left: 40%;
+    transition: 2s ease-in;
+    border-radius: 18px;
+    
+  }
+   .shipping input, .shipping button,.shipping h2{
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-align: center;
+    
+  }
+  #close{
+    font-size: 1.8rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .product-card li{
+    list-style: none;
+  }
+  .product-card a{
+    text-decoration: none;
+    text-align: center;
+  }
+   #add-to-cart {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  /* .products h1{
+    position: relative;
+    text-align: center;
+    top: 0px;
+  } */
+  .product-card:hover{
+    transform: rotateY(1turn);
+  }
+
+
+  .active{
+    background: rgb(80, 171, 80);
+    transition: 1s;
+    
+}
+.active #btnText{
+    transform: translateX(-5px);
+    transition: 1s;
+}
